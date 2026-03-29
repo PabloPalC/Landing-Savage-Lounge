@@ -8,6 +8,9 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 const root = document.documentElement;
 
+document.body.classList.add('js-ready');
+document.body.classList.add('force-motion');
+
 if (prefersReducedMotion) {
   document.body.classList.add('reduced-motion');
 }
